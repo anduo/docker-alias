@@ -1,0 +1,8 @@
+dex='docker exec -i -t'
+di='docker images'
+dip='docker inspect --format '\''{{ .NetworkSettings.IPAddress  }}'\'
+dkd='docker run -d -P'
+dki='docker run -i -t -P'
+dl='docker ps -l -q'
+dpa='docker ps -a'
+dps='docker ps'
