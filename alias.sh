@@ -7,6 +7,7 @@ dl='docker ps -l -q'
 dpa='docker ps -a'
 dps='docker ps'
 
+#可以进入容器内部，ctrd-d 退出，且不需要单独执行 /bin/bash。需要先安装nsenter
 denter() {
     #if [ -e $(dirname "$0")/nsenter  ]; then
     #Change for centos bash running
