@@ -1,11 +1,11 @@
-dex='docker exec -i -t'
-di='docker images'
-dip='docker inspect --format '\''{{ .NetworkSettings.IPAddress  }}'\'
-dkd='docker run -d -P'
-dki='docker run -i -t -P'
-dl='docker ps -l -q'
-dpa='docker ps -a'
-dps='docker ps'
+alias dex='docker exec -i -t'
+alias di='docker images'
+alias dip='docker inspect --format '\''{{ .NetworkSettings.IPAddress  }}'\'
+alias dkd='docker run -d -P'
+alias dki='docker run -i -t -P'
+alias dl='docker ps -l -q'
+alias dpa='docker ps -a'
+alias dps='docker ps'
 
 #可以进入容器内部，ctrd-d 退出，且不需要单独执行 /bin/bash。需要先安装nsenter
 denter() {
